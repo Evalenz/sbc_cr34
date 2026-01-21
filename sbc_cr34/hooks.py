@@ -25,8 +25,9 @@ add_to_apps_screen = [
 # ------------------
 
 # include js, css files in header of desk.html
-app_include_css = "/assets/sbc_cr34/css/sbc_cr34.css"
-app_include_js = "/assets/sbc_cr34/js/sbc_cr34.js"
+# COMENTADO: No usar build, cargar directamente
+# app_include_css = "/assets/sbc_cr34/css/sbc_cr34.css"
+# app_include_js = "/assets/sbc_cr34/js/sbc_cr34.js"
 
 # include js, css files in header of web template
 # web_include_css = "/assets/sbc_cr34/css/sbc_cr34.css"
@@ -43,6 +44,7 @@ app_include_js = "/assets/sbc_cr34/js/sbc_cr34.js"
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
+# Los archivos JS se cargarán directamente sin compilación
 doctype_js = {
 	"Cliente Turistico": "public/js/cliente_turistico.js",
 	"Reserva Paquete": "public/js/reserva_paquete.js",

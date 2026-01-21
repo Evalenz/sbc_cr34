@@ -1,8 +1,4 @@
 {
   "name": "sbc_cr34",
-  "version": "1.0.0",
-  "description": "SBC CRM - Sistema de Gestión de Clientes Turísticos",
-  "main": "public/js/sbc_cr34.js",
-  "author": "SBC Internationals",
-  "license": "MIT"
+  "version": "1.0.0"
 }
