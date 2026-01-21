@@ -1,0 +1,309 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "autoname": "field:nombre_empresa",
+ "creation": "2024-01-20 10:00:00.000000",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "informacion_basica",
+  "nombre_empresa",
+  "tipo_cliente",
+  "column_break_1",
+  "categoria",
+  "estrellas",
+  "seccion_contacto",
+  "contacto_principal",
+  "cargo",
+  "email",
+  "column_break_2",
+  "telefono",
+  "telefono_movil",
+  "whatsapp",
+  "seccion_ubicacion",
+  "pais",
+  "ciudad",
+  "provincia",
+  "column_break_3",
+  "direccion",
+  "codigo_postal",
+  "seccion_comercial",
+  "comision_estandar",
+  "metodo_pago",
+  "dias_credito",
+  "column_break_4",
+  "volumen_anual_estimado",
+  "fecha_alta",
+  "empleado_asignado",
+  "seccion_contactos_adicionales",
+  "contactos_adicionales",
+  "seccion_notas",
+  "notas",
+  "preferencias_cliente",
+  "seccion_web",
+  "website",
+  "linkedin",
+  "instagram"
+ ],
+ "fields": [
+  {
+   "fieldname": "informacion_basica",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n B\u00e1sica"
+  },
+  {
+   "bold": 1,
+   "fieldname": "nombre_empresa",
+   "fieldtype": "Data",
+   "in_list_view": 1,
+   "label": "Nombre Empresa",
+   "reqd": 1,
+   "unique": 1
+  },
+  {
+   "fieldname": "tipo_cliente",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Tipo de Cliente",
+   "options": "Hotel\nCadena Hotelera\nAgencia de Viajes\nTouroperador\nOtro",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "default": "Potencial",
+   "fieldname": "categoria",
+   "fieldtype": "Select",
+   "in_list_view": 1,
+   "in_standard_filter": 1,
+   "label": "Categor\u00eda",
+   "options": "Premium\nEst\u00e1ndar\nPotencial\nInactivo"
+  },
+  {
+   "depends_on": "eval:doc.tipo_cliente=='Hotel' || doc.tipo_cliente=='Cadena Hotelera'",
+   "fieldname": "estrellas",
+   "fieldtype": "Select",
+   "label": "Estrellas/Rating",
+   "options": "5 Estrellas\n4 Estrellas\n3 Estrellas\n2 Estrellas\nN/A"
+  },
+  {
+   "fieldname": "seccion_contacto",
+   "fieldtype": "Section Break",
+   "label": "Contacto Principal"
+  },
+  {
+   "fieldname": "contacto_principal",
+   "fieldtype": "Data",
+   "label": "Nombre Contacto",
+   "reqd": 1
+  },
+  {
+   "fieldname": "cargo",
+   "fieldtype": "Data",
+   "label": "Cargo"
+  },
+  {
+   "fieldname": "email",
+   "fieldtype": "Data",
+   "label": "Email",
+   "options": "Email",
+   "reqd": 1
+  },
+  {
+   "fieldname": "column_break_2",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "telefono",
+   "fieldtype": "Data",
+   "label": "Tel\u00e9fono",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "telefono_movil",
+   "fieldtype": "Data",
+   "label": "M\u00f3vil",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "whatsapp",
+   "fieldtype": "Data",
+   "label": "WhatsApp",
+   "options": "Phone"
+  },
+  {
+   "fieldname": "seccion_ubicacion",
+   "fieldtype": "Section Break",
+   "label": "Ubicaci\u00f3n"
+  },
+  {
+   "fieldname": "pais",
+   "fieldtype": "Link",
+   "in_standard_filter": 1,
+   "label": "Pa\u00eds",
+   "options": "Country",
+   "reqd": 1
+  },
+  {
+   "fieldname": "ciudad",
+   "fieldtype": "Data",
+   "label": "Ciudad",
+   "reqd": 1
+  },
+  {
+   "fieldname": "provincia",
+   "fieldtype": "Data",
+   "label": "Provincia/Estado"
+  },
+  {
+   "fieldname": "column_break_3",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "direccion",
+   "fieldtype": "Small Text",
+   "label": "Direcci\u00f3n"
+  },
+  {
+   "fieldname": "codigo_postal",
+   "fieldtype": "Data",
+   "label": "C\u00f3digo Postal"
+  },
+  {
+   "fieldname": "seccion_comercial",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n Comercial"
+  },
+  {
+   "default": "15",
+   "fieldname": "comision_estandar",
+   "fieldtype": "Percent",
+   "label": "Comisi\u00f3n Est\u00e1ndar (%)"
+  },
+  {
+   "fieldname": "metodo_pago",
+   "fieldtype": "Select",
+   "label": "M\u00e9todo de Pago Preferido",
+   "options": "Transferencia Bancaria\nTarjeta de Cr\u00e9dito\nPayPal\nCheque"
+  },
+  {
+   "default": "30",
+   "fieldname": "dias_credito",
+   "fieldtype": "Int",
+   "label": "D\u00edas de Cr\u00e9dito"
+  },
+  {
+   "fieldname": "column_break_4",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "volumen_anual_estimado",
+   "fieldtype": "Currency",
+   "label": "Volumen Anual Estimado (\u20ac)",
+   "options": "EUR"
+  },
+  {
+   "default": "Today",
+   "fieldname": "fecha_alta",
+   "fieldtype": "Date",
+   "label": "Fecha de Alta"
+  },
+  {
+   "fieldname": "empleado_asignado",
+   "fieldtype": "Link",
+   "label": "Empleado Asignado",
+   "options": "User"
+  },
+  {
+   "fieldname": "seccion_contactos_adicionales",
+   "fieldtype": "Section Break",
+   "label": "Contactos Adicionales"
+  },
+  {
+   "fieldname": "contactos_adicionales",
+   "fieldtype": "Table",
+   "label": "Otros Contactos",
+   "options": "Cliente Contacto Adicional"
+  },
+  {
+   "fieldname": "seccion_notas",
+   "fieldtype": "Section Break",
+   "label": "Notas y Observaciones"
+  },
+  {
+   "fieldname": "notas",
+   "fieldtype": "Text Editor",
+   "label": "Notas Internas"
+  },
+  {
+   "fieldname": "preferencias_cliente",
+   "fieldtype": "Text",
+   "label": "Preferencias del Cliente"
+  },
+  {
+   "fieldname": "seccion_web",
+   "fieldtype": "Section Break",
+   "label": "Informaci\u00f3n Web"
+  },
+  {
+   "fieldname": "website",
+   "fieldtype": "Data",
+   "label": "Sitio Web"
+  },
+  {
+   "fieldname": "linkedin",
+   "fieldtype": "Data",
+   "label": "LinkedIn"
+  },
+  {
+   "fieldname": "instagram",
+   "fieldtype": "Data",
+   "label": "Instagram"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "links": [],
+ "modified": "2024-01-20 10:00:00.000000",
+ "modified_by": "Administrator",
+ "module": "SBC CRM",
+ "name": "Cliente Turistico",
+ "naming_rule": "By fieldname",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales Master Manager",
+   "share": 1,
+   "write": 1
+  },
+  {
+   "create": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "Sales User",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "quick_entry": 1,
+ "search_fields": "nombre_empresa,contacto_principal,email",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "title_field": "nombre_empresa",
+ "track_changes": 1,
+ "track_seen": 1
+}
