@@ -1,1 +1,2 @@
-frappe
+
+# No dependencies required - Frappe will be installed by bench
