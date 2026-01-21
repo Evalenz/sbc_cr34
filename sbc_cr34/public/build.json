@@ -1,0 +1,7 @@
+{
+  "js/sbc_crm.min.js": [
+    "public/js/cliente_turistico.js",
+    "public/js/reserva_paquete.js",
+    "public/js/actividad_comercial.js"
+  ]
+}
