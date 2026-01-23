@@ -193,7 +193,7 @@ scheduler_events = {
 # ------------------------------
 
 override_whitelisted_methods = {
-	"frappe.desk.reportview.get": "sbc_cr34.overrides.reportview.get"
+	"frappe.desk.reportview.get": "sbc_cr34.overrides.get"
 }
 
 # each overriding function accepts a `data` argument;
