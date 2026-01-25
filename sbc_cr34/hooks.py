@@ -1,5 +1,5 @@
 app_name = "sbc_cr34"
-app_title = "SBC_crm"
+app_title = "sbc_crm"
 app_publisher = "SBC Internationals"
 app_description = "CRM personalizado para SBC Internationals"
 app_email = "sbcinternational@protonmail.com"
@@ -287,6 +287,16 @@ global_search_doctypes = {
 # website_route_rules = [
 # 	{"from_route": "/sbc-crm/<path:app_path>", "to_route": "sbc-crm"},
 # ]
+
+# Pages
+# ------
+# Register custom pages
+fixtures = [
+	{
+		"doctype": "Page",
+		"name": "clientes-import"
+	}
+]
 
 # Fixtures
 # --------

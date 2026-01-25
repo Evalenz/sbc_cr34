@@ -269,7 +269,7 @@
  "links": [],
  "modified": "2024-01-20 10:00:00.000000",
  "modified_by": "Administrator",
- "module": "SBC CRM",
+  "module": "sbc_crm",
  "name": "Cliente Turistico",
  "naming_rule": "By fieldname",
  "owner": "Administrator",
