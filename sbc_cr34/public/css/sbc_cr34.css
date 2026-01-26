@@ -1,4 +1,204 @@
-/* SBC CRM Custom Styles */
+/* SBC CRM Custom Styles - Color Palette */
+:root {
+    --sbc-primary-blue: #1e3a8a;
+    --sbc-light-blue: #3b82f6;
+    --sbc-silver: #c0c0c0;
+    --sbc-dark-silver: #a9a9a9;
+    --sbc-black: #000000;
+    --sbc-white: #ffffff;
+    --sbc-orange: #ff8c00;
+    --sbc-light-orange: #ffa500;
+    --sbc-beige: #f5e6d3;
+    --sbc-light-beige: #faf3ef;
+}
+
+/* General Styles */
+body {
+    background-color: var(--sbc-white);
+    color: var(--sbc-black);
+}
+
+/* Container Styles */
 .sbc-crm-container {
     padding: 15px;
+    background-color: var(--sbc-white);
+}
+
+/* Primary Buttons */
+.btn-primary {
+    background-color: var(--sbc-primary-blue) !important;
+    border-color: var(--sbc-primary-blue) !important;
+    color: var(--sbc-white) !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--sbc-light-blue) !important;
+    border-color: var(--sbc-light-blue) !important;
+}
+
+/* Secondary Buttons */
+.btn-secondary {
+    background-color: var(--sbc-orange) !important;
+    border-color: var(--sbc-orange) !important;
+    color: var(--sbc-white) !important;
+}
+
+.btn-secondary:hover {
+    background-color: var(--sbc-light-orange) !important;
+    border-color: var(--sbc-light-orange) !important;
+}
+
+/* Headers and Titles */
+.page-head,
+h1, h2, h3 {
+    color: var(--sbc-primary-blue);
+    border-bottom-color: var(--sbc-orange);
+}
+
+/* Cards and Panels */
+.card, 
+.panel,
+.form-layout {
+    background-color: var(--sbc-light-beige);
+    border: 1px solid var(--sbc-silver);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Form Controls */
+.form-control,
+input[type="text"],
+input[type="email"],
+input[type="number"],
+textarea,
+select {
+    background-color: var(--sbc-white);
+    border: 1px solid var(--sbc-silver);
+    color: var(--sbc-black);
+}
+
+.form-control:focus,
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border-color: var(--sbc-light-blue);
+    box-shadow: 0 0 0 0.2rem rgba(62, 130, 246, 0.25);
+    background-color: var(--sbc-white);
+}
+
+/* Labels */
+label,
+.form-label {
+    color: var(--sbc-primary-blue);
+    font-weight: 500;
+}
+
+/* Links */
+a {
+    color: var(--sbc-light-blue);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--sbc-primary-blue);
+    text-decoration: underline;
+}
+
+/* Tables */
+table {
+    background-color: var(--sbc-white);
+    border-color: var(--sbc-silver);
+}
+
+table thead {
+    background-color: var(--sbc-primary-blue);
+    color: var(--sbc-white);
+}
+
+table tbody tr:hover {
+    background-color: var(--sbc-beige);
+}
+
+table td, 
+table th {
+    border-color: var(--sbc-dark-silver);
+}
+
+/* Alerts and Messages */
+.alert-success {
+    background-color: rgba(34, 197, 94, 0.1);
+    border-color: #22c55e;
+    color: var(--sbc-black);
+}
+
+.alert-warning {
+    background-color: rgba(255, 152, 0, 0.1);
+    border-color: var(--sbc-orange);
+    color: var(--sbc-black);
+}
+
+.alert-danger {
+    background-color: rgba(239, 68, 68, 0.1);
+    border-color: #ef4444;
+    color: var(--sbc-black);
+}
+
+.alert-info {
+    background-color: rgba(59, 130, 246, 0.1);
+    border-color: var(--sbc-light-blue);
+    color: var(--sbc-black);
+}
+
+/* Navigation */
+.navbar,
+.sidebar {
+    background-color: var(--sbc-primary-blue);
+    color: var(--sbc-white);
+    border-color: var(--sbc-dark-silver);
+}
+
+.navbar a,
+.sidebar a {
+    color: var(--sbc-white);
+}
+
+.navbar a:hover,
+.sidebar a:hover {
+    background-color: var(--sbc-orange);
+    color: var(--sbc-white);
+}
+
+/* Badges */
+.badge {
+    background-color: var(--sbc-orange);
+    color: var(--sbc-white);
+}
+
+.badge-primary {
+    background-color: var(--sbc-primary-blue);
+}
+
+.badge-secondary {
+    background-color: var(--sbc-silver);
+    color: var(--sbc-black);
+}
+
+/* Accents */
+.accent-orange {
+    color: var(--sbc-orange);
+    font-weight: 600;
+}
+
+.accent-blue {
+    color: var(--sbc-primary-blue);
+    font-weight: 600;
+}
+
+.border-orange {
+    border-left: 4px solid var(--sbc-orange);
+}
+
+.border-blue {
+    border-left: 4px solid var(--sbc-primary-blue);
 }

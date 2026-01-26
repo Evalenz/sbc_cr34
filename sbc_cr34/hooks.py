@@ -41,7 +41,9 @@ add_to_apps_screen = [
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
-# page_js = {"page" : "public/js/file.js"}
+page_js = {
+	"clientes_import": "public/js/clientes_import.js"
+}
 
 # include js in doctype views
 # Los archivos JS se cargarán directamente sin compilación

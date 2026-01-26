@@ -118,6 +118,7 @@ def export_clientes_csv():
 		}
 
 
+@frappe.whitelist()
 def get_cliente_stats():
 	"""
 	Obtiene estadísticas de clientes
